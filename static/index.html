@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>仓鼠导航</title>
+    <link rel="icon" href="./img/nico.ico" type="image/x-icon">
+    <!-- <script src="//cdn.bootcss.com/vue/2.5.2/vue.min.js"></script> -->
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: #f2f2f2;
+    }
+
+    #app {
+        width: 100%;
+        height: 100%;
+        float: left;
+    }
+
+    #top {
+        width: 100%;
+        height: 60px;
+        background-color: white;
+        border-bottom: 1px solid #e8e8e8;
+        padding-left: 40px;
+    }
+
+    #top span {
+        line-height: 60px;
+        font-size: 27px;
+        font-weight: 400;
+        color: #484848;
+        padding: 20px;
+    }
+
+    #content {
+        width: 80%;
+        height: 500px;
+        background-color: white;
+        margin: 0 auto;
+        border-radius: 5px;
+        margin-top: 50px;
+    }
+
+    .box {
+        background: #fafafa;
+        /* width: 280px; */
+        flex-basis: 286px;
+        height: 135px;
+        border-radius: 5px;
+        margin: 10px;
+        transition: all 0.3s ease-in-out 0s;
+        display: inline-block;
+        cursor: pointer;
+        word-break:break-all;
+    }
+
+    .box .boxtop {
+        height: 50px;
+        width: 100%;
+        padding-top: 10px;
+        font-size: 20px;
+        line-height: 50px;
+        overflow: hidden;
+    }
+
+    .box .boxtop img{
+        margin-left: 10px;
+    }
+    .box .boxbuttom {
+        width: 100%;
+        height: 66px;
+        padding-left: 10px;
+        color: #A1A7B7;
+        overflow: hidden;
+    }
+    .box .boxbuttom span{
+        display: inline-block;
+        padding-right: 20px;
+        overflow: hidden;
+    }
+    .box:hover {
+        background-color: #486AAA;
+        color: #fff;
+    }
+</style>
+
+<body>
+    <!-- <h1>Hello World!</h1> -->
+    <div id="app">
+        <div id="top">
+            <img src="./img/nico.ico" alt=""
+                style="width: 60px;height: 60px;vertical-align:middle;margin-top: -15px;"><span>仓鼠导航</soan>
+        </div>
+
+
+        <div id="content">
+            <div style="display: flex;">
+                <div class="box">
+                    <div class="boxtop">
+                        <img src="./img/logo.png" alt=""
+                            style="width: 50px;height: 40px;vertical-align:middle;margin-top: -10px;">
+                        <span>warframe中文维基</span>
+                    </div>
+                    <div class="boxbuttom">
+                        <span>
+                            warframe中文维基是目前最全面的warframe资料库
+                        </span>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="boxtop">
+                        <img src="./img/overframe.ico" alt=""
+                            style="width: 40px;height: 40px;vertical-align:middle;margin-top: -10px;">
+                        <span>overframe</span>
+                    </div>
+                    <div class="boxbuttom">
+                        <span>
+                            overframe是由玩家上传的配卡参考平台
+                        </span>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="boxtop">
+                        <img src="./img/wm.ico" alt=""
+                            style="width: 40px;height: 40px;vertical-align:middle;margin-top: -10px;">
+                        <span>warframe market</span>
+                    </div>
+                    <div class="boxbuttom">
+                        <span>
+                            WM是外国warframe玩家最大的交易平台
+                        </span>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="boxtop">
+                        <img src="./img/天诺商会.png" alt=""
+                            style="width: 40px;height: 40px;vertical-align:middle;margin-top: -10px;">
+                        <span>天诺商会</span>
+                    </div>
+                    <div class="boxbuttom">
+                        <span>
+                            天诺商会是国内的warframe交易平台，也提供游戏时间，事件的查看
+                        </span>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="boxtop">
+                        <img src="./img/wfa.png" alt=""
+                            style="width: 40px;height: 40px;vertical-align:middle;margin-top: -10px;">
+                        <span>WFA紫卡市场</span>
+                    </div>
+                    <div class="boxbuttom">
+                        <span>
+                            WFA是warframe紫卡交易平台，也提供警报追踪等功能
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div style="display: flex;">
+
+                <div class="box">
+                    <div class="boxtop">
+                        <img src="./img/wb.png" alt=""
+                            style="width: 40px;height: 40px;vertical-align:middle;margin-top: -10px;">
+                        <span>Warframe Builder</span>
+                    </div>
+                    <div class="boxbuttom">
+                        <span>
+                            Warframe Builder是warframe的配卡模拟网站
+                        </span>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="boxtop">
+                        <img src="./img/logo.jpeg" alt=""
+                            style="width: 40px;height: 40px;vertical-align:middle;margin-top: -10px;">
+                        <span>Warframe百度贴吧</span>
+                    </div>
+                    <div class="boxbuttom">
+                        <span>
+                            没事可以水水经验
+                        </span>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="boxtop">
+                        <img src="./img/logo.png" alt=""
+                            style="width: 50px;height: 40px;vertical-align:middle;margin-top: -10px;">
+                        <span>Warframe中英对照表</span>
+                    </div>
+                    <div class="boxbuttom">
+                        <span>
+                            来自warframe中文维基，WM交易必备
+                        </span>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="boxtop">
+                        <img src="./img/裂罅之镜.png" alt=""
+                            style="width: 40px;height: 40px;vertical-align:middle;margin-top: -10px;">
+                        <span>裂罅之镜</span>
+                    </div>
+                    <div class="boxbuttom">
+                        <span>
+                            看各种时间，配色模拟，洗卡模拟，武器配装，最具特色的是紫卡分析功能，直观的告诉你紫卡的好坏
+                        </span>
+                    </div>
+                </div>
+
+                
+
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var pages = [
+        'https://warframe.huijiwiki.com/',
+        'https://overframe.gg/',
+        'https://warframe.market/',
+        'https://tenno.market/#/',
+        'https://riven.richasy.cn/#/',
+        'http://warframe-builder.com/',
+        'https://tieba.baidu.com/f?kw=warframe',
+        'https://warframe.huijiwiki.com/wiki/warframe%E4%B8%AD%E6%96%87%E7%BB%B4%E5%9F%BA:%E4%B8%AD%E8%8B%B1%E5%90%8D%E7%A7%B0%E5%AF%B9%E7%85%A7',
+        'https://riven.im/'
+    ]
+
+    var items = document.querySelectorAll(".box")
+
+    for (let index = 0; index < items.length; index++) {
+        items[index].onclick = function () {
+            window.open(pages[index])
+        }
+    }
+
+</script>
+
+</html>
