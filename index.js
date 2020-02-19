@@ -1,4 +1,5 @@
 (async function run() {
+    var fs = require('fs')
     //加载依赖
     const Koa = require('koa'); //引入koa框架
     const Static = require('koa-static-cache'); //引入koa静态资源依赖
@@ -32,16 +33,15 @@
         gzip: true
     }));
 
-    
-
     const router = new Router();//路由
-
-
 
     app.use(router.routes());//挂载路由
 
-    app.listen(8888, () => {
-        console.log('服务器成功启动');
+    router.get('/', async ctx => {
+        ctx.type = 'html';
+        ctx.body = fs.createReadStream('./static/index.html');
     });
+
+    app.listen(8888, () => {});
 
 })();
